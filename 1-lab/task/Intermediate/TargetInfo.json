@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "task",
+			"Path": "/Users/jasminebanares/Downloads/fit2096/1-lab/task/Source/task.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "taskEditor",
+			"Path": "/Users/jasminebanares/Downloads/fit2096/1-lab/task/Source/taskEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

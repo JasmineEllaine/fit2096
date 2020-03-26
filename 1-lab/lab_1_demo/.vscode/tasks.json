@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "lab_1_demo Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demo IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demo IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demo",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demoEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demoEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lab_1_demoEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "lab_1_demoEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lab_1_demoEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		}
+	]
+}

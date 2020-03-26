@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "lab_1_demo (Debug)",
+			"request": "launch",
+			"preLaunchTask": "lab_1_demo Mac Debug Build",
+			"program": "/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Applications/UE_4.24",
+			"type": "lldb"
+		},
+		{
+			"name": "lab_1_demo (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "lab_1_demo Mac DebugGame Build",
+			"program": "/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Applications/UE_4.24",
+			"type": "lldb"
+		},
+		{
+			"name": "lab_1_demo (Development)",
+			"request": "launch",
+			"preLaunchTask": "lab_1_demo Mac Development Build",
+			"program": "/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Applications/UE_4.24",
+			"type": "lldb"
+		},
+		{
+			"name": "lab_1_demo (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "lab_1_demo Mac Shipping Build",
+			"program": "/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Applications/UE_4.24",
+			"type": "lldb"
+		},
+		{
+			"name": "lab_1_demo (Test)",
+			"request": "launch",
+			"preLaunchTask": "lab_1_demo Mac Test Build",
+			"program": "/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Applications/UE_4.24",
+			"type": "lldb"
+		},
+		{
+			"name": "lab_1_demoEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "lab_1_demoEditor Mac Debug Build",
+			"program": "/Applications/UE_4.24/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject"
+			],
+			"cwd": "/Applications/UE_4.24",
+			"type": "lldb"
+		},
+		{
+			"name": "lab_1_demoEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "lab_1_demoEditor Mac DebugGame Build",
+			"program": "/Applications/UE_4.24/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject"
+			],
+			"cwd": "/Applications/UE_4.24",
+			"type": "lldb"
+		},
+		{
+			"name": "lab_1_demoEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "lab_1_demoEditor Mac Development Build",
+			"program": "/Applications/UE_4.24/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject"
+			],
+			"cwd": "/Applications/UE_4.24",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Applications/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/jasminebanares/Downloads/fit2096/1-lab/lab_1_demo/lab_1_demo.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Applications/UE_4.24"
+		}
+	]
+}
