@@ -22,8 +22,8 @@ AtaskProjectile::AtaskProjectile()
 	// Use a ProjectileMovementComponent to govern this projectile's movement
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileComp"));
 	ProjectileMovement->UpdatedComponent = CollisionComp;
-	ProjectileMovement->InitialSpeed = 10000.f;
-	ProjectileMovement->MaxSpeed = 10000.f;
+	ProjectileMovement->InitialSpeed = 20000.f;
+	ProjectileMovement->MaxSpeed = 20000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
 

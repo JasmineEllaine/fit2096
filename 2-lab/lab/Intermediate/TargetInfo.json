@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "labEditor",
+			"Path": "/Users/jasminebanares/Downloads/fit2096/2-lab/lab/Source/labEditor.Target.cs",
+			"Type": "Editor"
+		},
+		{
+			"Name": "lab",
+			"Path": "/Users/jasminebanares/Downloads/fit2096/2-lab/lab/Source/lab.Target.cs",
+			"Type": "Game"
+		}
+	]
+}
