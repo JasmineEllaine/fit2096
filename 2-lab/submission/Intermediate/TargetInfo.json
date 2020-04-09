@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "submissionEditor",
+			"Path": "/Users/jasminebanares/Downloads/fit2096/2-lab/submission/Source/submissionEditor.Target.cs",
+			"Type": "Editor"
+		},
+		{
+			"Name": "submission",
+			"Path": "/Users/jasminebanares/Downloads/fit2096/2-lab/submission/Source/submission.Target.cs",
+			"Type": "Game"
+		}
+	]
+}

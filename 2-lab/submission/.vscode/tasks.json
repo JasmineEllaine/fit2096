@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "submission Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submission IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submission IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submission",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submissionEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submissionEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"submissionEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "submissionEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"submissionEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/2-lab/submission/submission.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		}
+	]
+}
