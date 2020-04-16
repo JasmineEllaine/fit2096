@@ -67,5 +67,26 @@ void ACharacterPawn::MoveRight(float axisValue) {
 }
 
 void ACharacterPawn::Shoot() {
-    
+    UE_LOG(LogTemp, Warning, TEXT("Bang!"));
+
+    FHitResult linetraceResult;
+    FVector startTrace = GetActorLocation();
+    startTrace.X += 200;
+
+    FVector endTrace = (GetActorForwardVector()*7500)
+        + startTrace;
+    FCollisionQueryParams params;
+
+    bool isHit = GetWorld()->LineTraceSingleByChannel(
+        linetraceResult, startTrace, endTrace, ECC_WorldStatic,
+        params);
+
+    if (isHit) {
+        AShootableActor *shootTarget = Cast<AShootableActor>(
+            linetraceResult.GetActor()); 
+        if (shootTarget) {
+            UE_LOG(LogTemp, Warning, TEXT("Hit target"));
+            shootTarget->OnBulletHit(); 
+        }
+    }
 }

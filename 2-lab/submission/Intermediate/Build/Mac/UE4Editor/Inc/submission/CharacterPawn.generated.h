@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SUBMISSION_CharacterPawn_generated_h
 
-#define submission_Source_submission_CharacterPawn_h_18_SPARSE_DATA
-#define submission_Source_submission_CharacterPawn_h_18_RPC_WRAPPERS
-#define submission_Source_submission_CharacterPawn_h_18_RPC_WRAPPERS_NO_PURE_DECLS
-#define submission_Source_submission_CharacterPawn_h_18_INCLASS_NO_PURE_DECLS \
+#define submission_Source_submission_CharacterPawn_h_19_SPARSE_DATA
+#define submission_Source_submission_CharacterPawn_h_19_RPC_WRAPPERS
+#define submission_Source_submission_CharacterPawn_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define submission_Source_submission_CharacterPawn_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACharacterPawn(); \
 	friend struct Z_Construct_UClass_ACharacterPawn_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ACharacterPawn)
 
 
-#define submission_Source_submission_CharacterPawn_h_18_INCLASS \
+#define submission_Source_submission_CharacterPawn_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesACharacterPawn(); \
 	friend struct Z_Construct_UClass_ACharacterPawn_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ACharacterPawn)
 
 
-#define submission_Source_submission_CharacterPawn_h_18_STANDARD_CONSTRUCTORS \
+#define submission_Source_submission_CharacterPawn_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACharacterPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACharacterPawn) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define submission_Source_submission_CharacterPawn_h_18_ENHANCED_CONSTRUCTORS \
+#define submission_Source_submission_CharacterPawn_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACharacterPawn(ACharacterPawn&&); \
@@ -58,28 +58,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACharacterPawn); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACharacterPawn)
 
 
-#define submission_Source_submission_CharacterPawn_h_18_PRIVATE_PROPERTY_OFFSET
-#define submission_Source_submission_CharacterPawn_h_15_PROLOG
-#define submission_Source_submission_CharacterPawn_h_18_GENERATED_BODY_LEGACY \
+#define submission_Source_submission_CharacterPawn_h_19_PRIVATE_PROPERTY_OFFSET
+#define submission_Source_submission_CharacterPawn_h_16_PROLOG
+#define submission_Source_submission_CharacterPawn_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	submission_Source_submission_CharacterPawn_h_18_PRIVATE_PROPERTY_OFFSET \
-	submission_Source_submission_CharacterPawn_h_18_SPARSE_DATA \
-	submission_Source_submission_CharacterPawn_h_18_RPC_WRAPPERS \
-	submission_Source_submission_CharacterPawn_h_18_INCLASS \
-	submission_Source_submission_CharacterPawn_h_18_STANDARD_CONSTRUCTORS \
+	submission_Source_submission_CharacterPawn_h_19_PRIVATE_PROPERTY_OFFSET \
+	submission_Source_submission_CharacterPawn_h_19_SPARSE_DATA \
+	submission_Source_submission_CharacterPawn_h_19_RPC_WRAPPERS \
+	submission_Source_submission_CharacterPawn_h_19_INCLASS \
+	submission_Source_submission_CharacterPawn_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define submission_Source_submission_CharacterPawn_h_18_GENERATED_BODY \
+#define submission_Source_submission_CharacterPawn_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	submission_Source_submission_CharacterPawn_h_18_PRIVATE_PROPERTY_OFFSET \
-	submission_Source_submission_CharacterPawn_h_18_SPARSE_DATA \
-	submission_Source_submission_CharacterPawn_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	submission_Source_submission_CharacterPawn_h_18_INCLASS_NO_PURE_DECLS \
-	submission_Source_submission_CharacterPawn_h_18_ENHANCED_CONSTRUCTORS \
+	submission_Source_submission_CharacterPawn_h_19_PRIVATE_PROPERTY_OFFSET \
+	submission_Source_submission_CharacterPawn_h_19_SPARSE_DATA \
+	submission_Source_submission_CharacterPawn_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	submission_Source_submission_CharacterPawn_h_19_INCLASS_NO_PURE_DECLS \
+	submission_Source_submission_CharacterPawn_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

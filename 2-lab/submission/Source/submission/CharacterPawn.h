@@ -9,6 +9,7 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Pawn.h"
 #include "CollisionQueryParams.h"
+#include "ShootableActor.h"
 // End of includes
 #include "CharacterPawn.generated.h"
 
