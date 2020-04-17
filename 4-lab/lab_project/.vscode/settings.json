@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"/Users/jasminebanares/Downloads/fit2096/4-lab/lab_project/Saved": true,
+		"/Users/jasminebanares/Downloads/fit2096/4-lab/lab_project/lab_project.xcworkspace": true,
+		"/Users/jasminebanares/Downloads/fit2096/4-lab/lab_project/Content": true,
+		"/Users/jasminebanares/Downloads/fit2096/4-lab/lab_project/.vscode": true,
+		"/Users/jasminebanares/Downloads/fit2096/4-lab/lab_project/Intermediate": true
+	}
+}
