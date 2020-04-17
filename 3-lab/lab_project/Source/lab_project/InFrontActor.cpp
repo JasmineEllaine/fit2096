@@ -77,4 +77,3 @@ void AInFrontActor::Tick(float DeltaTime)
         }
     }
 }
-
