@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "online_tutorial Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"Mac",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Shipping",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorial IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorial IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorial",
+				"IOS",
+				"Test",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorialEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"Debug",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorialEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"online_tutorialEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		},
+		{
+			"label": "online_tutorialEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"online_tutorialEditor",
+				"Mac",
+				"Development",
+				"/Users/jasminebanares/Downloads/fit2096/online_tutorial/online_tutorial.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Applications/UE_4.24"
+			}
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "online_tutorialEditor",
+			"Path": "/Users/jasminebanares/Downloads/fit2096/online_tutorial/Source/online_tutorialEditor.Target.cs",
+			"Type": "Editor"
+		},
+		{
+			"Name": "online_tutorial",
+			"Path": "/Users/jasminebanares/Downloads/fit2096/online_tutorial/Source/online_tutorial.Target.cs",
+			"Type": "Game"
+		}
+	]
+}
