@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeStationaryRotatingActor() {}
 	LAB_PROJECT_API UClass* Z_Construct_UClass_AStationaryRotatingActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_lab_project();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void AStationaryRotatingActor::StaticRegisterNativesAStationaryRotatingActor()
 	{
@@ -31,6 +32,15 @@ void EmptyLinkFunctionForGeneratedCodeStationaryRotatingActor() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VisibleComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_VisibleComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RotationSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RotationSpeed;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +54,25 @@ void EmptyLinkFunctionForGeneratedCodeStationaryRotatingActor() {}
 		{ "ModuleRelativePath", "StationaryRotatingActor.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_VisibleComponent_MetaData[] = {
+		{ "Category", "StationaryRotatingActor" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "StationaryRotatingActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_VisibleComponent = { "VisibleComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AStationaryRotatingActor, VisibleComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_VisibleComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_VisibleComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_RotationSpeed_MetaData[] = {
+		{ "Category", "StationaryRotatingActor" },
+		{ "ModuleRelativePath", "StationaryRotatingActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_RotationSpeed = { "RotationSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AStationaryRotatingActor, RotationSpeed), METADATA_PARAMS(Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_RotationSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_RotationSpeed_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AStationaryRotatingActor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_VisibleComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStationaryRotatingActor_Statics::NewProp_RotationSpeed,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AStationaryRotatingActor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AStationaryRotatingActor>::IsAbstract,
 	};
@@ -53,11 +82,11 @@ void EmptyLinkFunctionForGeneratedCodeStationaryRotatingActor() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AStationaryRotatingActor_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AStationaryRotatingActor_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AStationaryRotatingActor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AStationaryRotatingActor_Statics::Class_MetaDataParams))
@@ -71,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeStationaryRotatingActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AStationaryRotatingActor, 939342210);
+	IMPLEMENT_CLASS(AStationaryRotatingActor, 3888081160);
 	template<> LAB_PROJECT_API UClass* StaticClass<AStationaryRotatingActor>()
 	{
 		return AStationaryRotatingActor::StaticClass();
